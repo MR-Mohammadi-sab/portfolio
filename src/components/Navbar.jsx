@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { Menu,X } from "lucide-react";
 
 
@@ -7,7 +7,6 @@ const navElements=[
   { path: '/', label: 'Home'},
   { path: '/projects', label: 'Projects' },
   { path: '/about', label: 'about',},
-  { path: '/contact', label: 'Contact'},
   { path: '/resume', label: 'resume'},
   
 ]
@@ -34,7 +33,7 @@ export default function Navbar() {
 
         localStorage.setItem('theme',theme)},[theme])
   return (
-    <nav className="sticky top-0 backdrop-blur-sm bg-gray-100 dark:bg-gray-900/80">
+    <nav className=" bg-gray-100 dark:bg-gray-900/80">
       <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="flex items-start  justify-between relative">
           
@@ -49,13 +48,13 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8 mt-4">
             {navElements.map((item) => (
-              <Link 
+              <NavLink 
                 key={item.path} 
                 to={item.path}
                 className="hover:text-blue-500 text-gray-700 dark:text-gray-100 transition-colors uppercase font-bold text-sm"
               >
                 {item.label}
-              </Link>
+              </NavLink>
               
             ))}
             
@@ -76,13 +75,13 @@ export default function Navbar() {
 
       {  open&& <div className="flex flex-col justify-center  md:hidden items-center gap-8 mt-4 z-50 mr-28">
             {navElements.map((item) => (
-              <Link 
+              <NavLink 
                 key={item.path} 
                 to={item.path}
                 className="hover:text-blue-500 text-gray-700 dark:text-gray-100 transition-colors uppercase font-bold text-sm"
               >
                 {item.label}
-              </Link>
+              </NavLink>
               
             ))}
 

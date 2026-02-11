@@ -1,5 +1,32 @@
+import { Download } from "lucide-react";
+
 export default function Resume() {
   return (
-    <div>cv</div>
-  )
+    <section className="pt-32 pb-20 bg-gray-100 dark:bg-gray-900/80 ">
+      <div className="max-w-6xl mx-auto px-6">
+
+        {/* Page Title */}
+        <div className="mb-16 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 dark:text-gray-100">
+            My <span className="text-blue-500">Resume</span>
+          </h1>
+          <p className="text-gray-600 dark:text-gray-400">
+            Frontend Developer | React 
+          </p>
+        </div>
+
+        {/* Download Button */}
+        <div className="flex justify-center mb-16">
+          <a
+            href="../../public/Mohammad-Asef-Mohammadi-Front-End-Developer-CV.pdf"   
+            download
+            className="flex items-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+          >
+            <Download size={18} />
+            Download CV
+          </a>
+        </div>
+      </div>
+    </section>
+  );
 }
