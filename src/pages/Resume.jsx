@@ -1,4 +1,4 @@
-export default function cv() {
+export default function Resume() {
   return (
     <div>cv</div>
   )
