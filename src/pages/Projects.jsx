@@ -3,10 +3,18 @@ import { datas } from "../../projects";
 // components/ProjectCard.jsx
 export default function ProjectCard ( ) {
   return (
-    <div className="bg-gray-100 dark:bg-gray-900/80 p-10 grid grid-cols-3 gap-3">
+    <>
+    <div className="bg-gray-100 dark:bg-gray-900/80 w-full text-center">
+      <div className="inline-block px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 mb-6 text-sm font-medium capitalize">
+         Here are some of my  projects, <br />
+          transforming ideas into real experiences
+
+        </div>
+      </div>
+    <div className="bg-gray-100 dark:bg-gray-900/80 p-10 grid md:grid-cols-3 gap-3">
       
    { datas.map((project)=>   
-    <div className="max-w-sm  rounded-lg  bg-gray-200 p-1 dark:bg-gray-800" key={project.id}> 
+    <div className="max-w-sm  rounded-lg  bg-gray-200 p-1 dark:bg-gray-800 mx-auto" key={project.id}> 
       {/* Project Image */}
       
       <div className="h-48 w-full ">
@@ -58,5 +66,6 @@ export default function ProjectCard ( ) {
       </div>)
  }
     </div>
+    </>
   )
 }
