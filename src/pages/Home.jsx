@@ -16,7 +16,7 @@ export default function Home() {
           <span className="text-blue-500 block">
             Web Experiences
           </span>
-          with React 
+          with React
         </h1>
         
         {/* Subtitle */}
