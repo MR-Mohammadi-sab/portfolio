@@ -2,7 +2,7 @@ import { Download } from "lucide-react";
 
 export default function Resume() {
   return (
-    <section className="pt-32 pb-20 bg-gray-100 dark:bg-gray-900/80 ">
+    <section className="pt-32 pb-20 bg-gray-100 dark:bg-gray-900/80 h-screen">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Page Title */}
@@ -18,7 +18,7 @@ export default function Resume() {
         {/* Download Button */}
         <div className="flex justify-center mb-16">
           <a
-            href="../../public/Mohammad-Asef-Mohammadi-Front-End-Developer-CV.pdf"   
+            href="/Mohammad-Asef-Mohammadi-Front-End-Developer-CV.pdf"   
             download
             className="flex items-center gap-2 px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
           >
