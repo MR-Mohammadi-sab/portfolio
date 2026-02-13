@@ -40,7 +40,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex items-center gap-4">
             <div >
-                <img src="/my.jpg" alt="my picture" className="w-24 h-24 rounded-4xl md:w-32 md:h-32 object-cover" />
+                {/* <img src="/my.jpg" alt="my picture" className="w-24 h-24 rounded-4xl md:w-32 md:h-32 object-cover" /> */}
             </div>
             <span className="font-bold lg:text-xl select-none dark:text-gray-100 text-sm text-gray-800">Mohammad Asef <br /> Mohammadi</span>
           </div>

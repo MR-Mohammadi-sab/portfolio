@@ -4,4 +4,4 @@
 ![The page picture](public/localhost_5173_projects.png)
 
 # Deploy👇
-(https://protfolio18.netlify.app/)
+(https://portfolio488.netlify.app/)

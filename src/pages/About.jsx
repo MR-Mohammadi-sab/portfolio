@@ -8,7 +8,7 @@ export default function About(){
     <section className="pt-20 bg-gray-100  dark:bg-gray-900/80">
       <div className="max-w-6xl mx-auto px-6">
 
-        <a href="#end">
+        <a href="#end" className="mb-4">
         <div className="animate-bounce dark:text-gray-100 text-gray-900 flex gap-2"><ChevronDown /> <span className="text-2xl text-blue-500  rounded-lg hover:text-blue-600 transition-all font-bold">Contact</span></div></a>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -16,8 +16,8 @@ export default function About(){
           {/*  Image */}
           <div className="relative">
             <div className="w-80 h-80 mx-auto rounded-2xl z bg-gradient-to-r from-blue-400 to-purple-500 p-1">
-              <div className="w-full h-full bg-white dark:bg-gray-900 rounded-2xl flex items-center justify-center">
-                <span className="text-9xl">👨‍💻</span>
+              <div className="w-full h-full bg-white dark:bg-gray-900 rounded-2xl flex items-center justify-center p-2">
+                <img src="/my.png" alt="my picture" className=" object-cover" />
               </div>
             </div>
             
