@@ -1,24 +1,5 @@
 export const datas=[
     {
-        id: 5,
-        title:"Online shope",
-        image:'/online-shopping-mohammadi.netlify.app_.png',
-        desc:"A full-featured Online shope built with React, tailwind css full Responsive Mobile friendly",
-        tech: ["React", "Tailwind CSS" ],
-        demoUrl: "https://online-shopping-mohammadi.netlify.app/",
-        githubUrl: "https://github.com/MR-Mohammadi-sab/react-online-shopping"
-    },
-    
-    {
-        id: 9,
-        title:"Find Movies",
-        image:'/localhost_3002_.png',
-        desc:"A full-frontend Find Movies built with React and Tailwind css full Responsive Mobile  friendly ",
-        tech: ["React", "Tailwind CSS" ],
-        demoUrl: "https://usepopcornmovi.netlify.app//",
-        githubUrl: "https://github.com/MR-Mohammadi-sab/usePopcorn"
-    },
-    {
         id: 1,
         title:"Social Media App",
         image:'/lamasocial02.netlify.app_.png',
@@ -28,10 +9,29 @@ export const datas=[
         githubUrl: "https://github.com/MR-Mohammadi-sab/ReactJS_lamaSocial"
     },
     {
+        id: 5,
+        title:"Online shope",
+        image:'/online-shopping-mohammadi.netlify.app_.png',
+        desc:"A full-featured Online shope built with React, tailwind css full Responsive Mobile friendly this is my first project",
+        tech: ["React", "Tailwind CSS" ],
+        demoUrl: "https://online-shopping-mohammadi.netlify.app/",
+        githubUrl: "https://github.com/MR-Mohammadi-sab/react-online-shopping"
+    },
+    
+    {
+        id: 9,
+        title:"Find Movies",
+        image:'/localhost_3002_.png',
+        desc:"A full-frontend Find Movies built with React and Tailwind css ",
+        tech: ["React", "Tailwind CSS" ],
+        demoUrl: "https://usepopcornmovi.netlify.app//",
+        githubUrl: "https://github.com/MR-Mohammadi-sab/usePopcorn"
+    },
+    {
         id: 8,
         title:"Travel List",
         image:'/localhost_3001_.png',
-        desc:"A full-frontend Travel List built with React and Tailwind css full Responsive Mobile  friendly ",
+        desc:"A full-frontend Travel List built with React and Tailwind css ",
         tech: ["React", "Tailwind CSS" ],
         demoUrl: "https://travellistp.netlify.app/",
         githubUrl: "https://github.com/MR-Mohammadi-sab/Travel-List"
