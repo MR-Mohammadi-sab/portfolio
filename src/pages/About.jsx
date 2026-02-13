@@ -8,7 +8,7 @@ export default function About(){
     <section className="pt-20 bg-gray-100  dark:bg-gray-900/80">
       <div className="max-w-6xl mx-auto px-6">
 
-        <a href="#end" className="mb-4">
+        <a href="#end" className="">
         <div className="animate-bounce dark:text-gray-100 text-gray-900 flex gap-2"><ChevronDown /> <span className="text-2xl text-blue-500  rounded-lg hover:text-blue-600 transition-all font-bold">Contact</span></div></a>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
