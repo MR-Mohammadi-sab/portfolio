@@ -46,8 +46,9 @@ export default function Navbar() {
           </div>
           
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-8 mt-4">
+          <ul className="hidden md:flex items-center gap-8 mt-4">
             {navElements.map((item) => (
+              <li>
               <NavLink 
                 key={item.path} 
                 to={item.path}
@@ -55,18 +56,20 @@ export default function Navbar() {
               >
                 {item.label}
               </NavLink>
+              </li>
               
             ))}
             
             {/* Theme Toggle */}
+            <li>
             <button 
               onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
               className="text-2xl p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-800 flex items-center justify-center"
             >
               {theme === 'light' ? '🌙' : '☀️'}
-            </button>
+            </button></li>
             
-          </div>
+          </ul>
           
           {/* Mobile Menu Button */}
           <button className="md:hidden dark:text-gray-100 cursor-pointer absolute right-2 top-2" onClick={()=>setOpen(prev=>!prev)}>
