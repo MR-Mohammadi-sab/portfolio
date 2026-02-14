@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <section className="min-h-screen flex items-center bg-gray-100 dark:bg-gray-900/80 pb-4">
-      <div className="max-w-6xl mx-auto px-6">
+    <main className="min-h-screen flex items-center bg-gray-100 dark:bg-gray-900/80 pb-4">
+      <section className="max-w-6xl mx-auto px-6">
         
         <div className="inline-block px-4 py-1.5 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 mb-6 text-sm font-medium">
           👨‍💻 Computer Science Student • Frontend Developer
@@ -43,7 +43,7 @@ export default function Home() {
             Contact Me
           </Link>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   );
 }

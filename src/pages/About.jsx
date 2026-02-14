@@ -6,7 +6,7 @@ const familiarTech=['NEXTJS','ORCALE','BOOTSTRAP'];
 export default function About(){
   return (
     <section className="pt-20 bg-gray-100  dark:bg-gray-900/80">
-      <main className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
 
         <a href="#end" className="">
         <div className="animate-bounce dark:text-gray-100 text-gray-900 flex gap-2"><ChevronDown /> <span className="text-2xl text-blue-500  rounded-lg hover:text-blue-600 transition-all font-bold">Contact</span></div></a>
@@ -64,7 +64,7 @@ export default function About(){
 
           </div>
         </div>
-      </main>
+      </div>
 
         <AboutFooter />
         <div id="end"></div>
