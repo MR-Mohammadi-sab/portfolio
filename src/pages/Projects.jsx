@@ -17,17 +17,17 @@ export default function ProjectCard ( ) {
     <div className="max-w-sm  rounded-lg  bg-gray-200 p-1 dark:bg-gray-800 mx-auto" key={project.id}> 
       {/* Project Image */}
       
-      <div className="h-48 w-full ">
+      <figure className="h-48 w-full ">
         <img 
           src={project.image} 
           alt={project.title}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
         
-      </div>
+      </figure>
       
       {/* Content */}
-      <div className="p-6   dark:text-gray-100">
+      <figcaption className="p-6   dark:text-gray-100">
         <h3 className="text-xl font-bold mb-2">{project.title}</h3>
         <p className="text-gray-600 dark:text-gray-300 mb-4">
           {project.desc}
@@ -62,7 +62,8 @@ export default function ProjectCard ( ) {
             View Code
           </a>
         </div>
-      </div>
+      </figcaption>
+
       </div>)
  }
     </div>
