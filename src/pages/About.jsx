@@ -6,7 +6,7 @@ const familiarTech=['NEXTJS','ORCALE','BOOTSTRAP'];
 export default function About(){
   return (
     <section className="pt-20 bg-gray-100  dark:bg-gray-900/80">
-      <div className="max-w-6xl mx-auto px-6">
+      <main className="max-w-6xl mx-auto px-6">
 
         <a href="#end" className="">
         <div className="animate-bounce dark:text-gray-100 text-gray-900 flex gap-2"><ChevronDown /> <span className="text-2xl text-blue-500  rounded-lg hover:text-blue-600 transition-all font-bold">Contact</span></div></a>
@@ -52,19 +52,19 @@ export default function About(){
             </p>
 
             {/* Skills  */}
-            <div className="flex flex-wrap gap-3 mt-4">
-                {tech.map((skil)=><span key={skil} className="px-3 py-1 bg-gray-200 dark:bg-gray-800 rounded-full text-sm font-medium dark:text-gray-100">{skil}</span>)}
-            </div>
+            <ul className="flex flex-wrap gap-3 mt-4">
+                {tech.map((skil)=><li key={skil} className="px-3 py-1 bg-gray-200 dark:bg-gray-800 rounded-full text-sm font-medium dark:text-gray-100">{skil}</li>)}
+            </ul>
             {/* Skills  familiar*/}
-            <div className="flex flex-wrap gap-3 mt-4">
+            <ul className="flex flex-wrap gap-3 mt-4">
               <span className="text-2xl text-blue-500  rounded-lg hover:text-blue-600 transition-all font-bold">Familiar to</span>
-                {familiarTech.map((skil)=><span key={skil}  className="px-3 py-1 bg-gray-200 dark:bg-gray-800 rounded-full text-sm font-medium dark:text-gray-100">{skil}</span>)}
-            </div>
+                {familiarTech.map((skil)=><li key={skil}  className="px-3 py-1 bg-gray-200 dark:bg-gray-800 rounded-full text-sm font-medium dark:text-gray-100">{skil}</li>)}
+            </ul>
 
 
           </div>
         </div>
-      </div>
+      </main>
 
         <AboutFooter />
         <div id="end"></div>
